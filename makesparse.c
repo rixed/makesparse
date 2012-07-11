@@ -1,5 +1,7 @@
 // -*- c-basic-offset: 4; c-backslash-column: 79; indent-tabs-mode: nil -*-
 // vim:sw=4 ts=4 sts=4 expandtab
+#define _FILE_OFFSET_BITS 64
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <errno.h>
@@ -7,8 +9,6 @@
 #include <limits.h>
 #include <unistd.h>
 #include <sys/types.h>
-
-#define _FILE_OFFSET_BITS 64
 
 static void check_err(FILE *f, char const *fname)
 {
